@@ -499,6 +499,7 @@
 		<module>shiro-api</module>
 		<module>shiro-provider</module>
 		<module>shiro-provider-authentication</module>
+		<module>shiro-provider-authorization</module>
     <module>shiro-consumer</module>
   </modules>
 </project>

@@ -25,12 +25,13 @@ public class AuthenticationServiceImpl implements IAuthenticationService {
 		if(vo == null) {
 			throw new AccountNotFoundException("用户名不存！");
 		}
-		if(vo.getPassword() != password) {
-			throw new FailedLoginException("用户名密码不正确") ;
+		if(!password.equals(vo.getPassword())) {
+			throw new FailedLoginException("用户名密码不正确" + "||" + password + "||数据库" +vo.getPassword()) ;
 		}
 		if(vo.getLocked() == 1) {
 			throw new AccountLockedException("账户被锁定") ;
 		}
+		System.err.println("继续执行");
 		Map<String,Object> map = new HashMap<>() ;
 		map.put("name", vo.getName()) ;
 		return map;
