@@ -1,2 +1,4 @@
+cn\team\shiro\provider\dao\IMemberDAO.class
+cn\team\shiro\provider\service\impl\AuthenticationServiceImpl.class
+cn\team\shiro\provider\service\impl\AUTHServiceMain.class
 cn\team\shiro\provider\service\impl\EmpServiceImpl.class
-cn\team\shiro\provider\service\impl\ServiceMain.class

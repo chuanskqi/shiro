@@ -9,7 +9,7 @@
 
 	<dubbo:annotation package="cn.team.shiro.provider.service.impl"/>
 	<!-- 定义本次Dubbo服务的提供者的应用程序名称 -->
-	<dubbo:application name="${dubbo.application.name}" version="dev"/>
+	<dubbo:application name="${dubbo.application.name}" version="${dubbo.interface.version}"/>
 	<!-- 在进行Dubbo服务注册的时候一定要将服务注册到ZooKeeper之中 -->
 	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" 
 		timeout="${dubbo.provider.timeout}" file="${dubbo.registry.file}"/>

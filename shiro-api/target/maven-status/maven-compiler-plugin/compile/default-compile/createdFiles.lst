@@ -1,2 +1,4 @@
+cn\team\shiro\api\vo\Member.class
 cn\team\shiro\api\vo\Emp.class
 cn\team\shiro\api\service\IEmpService.class
+cn\team\shiro\api\service\IAuthenticationService.class
