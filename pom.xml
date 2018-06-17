@@ -12,7 +12,7 @@
 
 	<properties>
 		<!-- 本项目版本 -->
-		<cn.team.shiro.version>0.0.1</cn.team.shiro.version>	
+		<cn.team.shiro.version>0.0.1</cn.team.shiro.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<profiles.dir>src/main/profiles</profiles.dir>
 		<resources.dir>src/main/resources</resources.dir>
@@ -58,15 +58,19 @@
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-			<!--子模块的引用-->
+			<!--子模块的引用 sart-->
 			<dependency>
 				<groupId>cn.team</groupId>
 				<artifactId>shiro-api</artifactId>
 				<version>${cn.team.shiro.version}</version>
 			</dependency>
-			
-			
-			
+			<dependency>
+				<groupId>cn.team</groupId>
+				<artifactId>shiro-util</artifactId>
+				<version>${cn.team.shiro.version}</version>
+			</dependency>
+			<!--子模块的引用 end-->
+
 			<dependency>
 				<groupId>commons-collections</groupId>
 				<artifactId>commons-collections</artifactId>
@@ -500,6 +504,9 @@
 		<module>shiro-provider</module>
 		<module>shiro-provider-authentication</module>
 		<module>shiro-provider-authorization</module>
-    <module>shiro-consumer</module>
+		<module>shiro-consumer</module>
+		<module>shiro-web</module>
+		<module>shiro-util</module>
+    <module>shiro-base</module>
   </modules>
 </project>

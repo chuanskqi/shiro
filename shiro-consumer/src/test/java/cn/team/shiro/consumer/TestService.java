@@ -11,7 +11,6 @@ import com.alibaba.dubbo.config.annotation.Reference;
 
 import cn.team.shiro.api.service.IAuthenticationService;
 import cn.team.shiro.api.service.IAuthorizationService;
-import cn.team.shiro.api.service.IEmpService;
 
 //@ContextConfiguration(locations= {"classpath:spring/spring-*.xml"})
 @ContextConfiguration(locations = { "classpath:spring/spring-*.xml" })
